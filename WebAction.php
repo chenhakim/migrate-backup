@@ -1,5 +1,5 @@
 <?php
-namespace migrateBackup\migration;
+namespace chenhakim\migration;
 
 use Yii;
 use yii\base\Action;
@@ -53,7 +53,7 @@ class WebAction extends Action
         /* 创建migration */
         foreach ($tables as $table) {
             $migrate = Yii::createObject([
-                'class' => 'migrateBackup\migration\components\MigrateCreate',
+                'class' => 'chenhakim\migration\components\MigrateCreate',
                 'migrationPath' => $this->migrationPath
             ]);
             $migrate->create($table);

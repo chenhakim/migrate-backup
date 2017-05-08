@@ -1,6 +1,8 @@
-# migrateBackup
+# chenhakim
 yii2 migration 备份数据库数据与恢复
 
+
+### 原作者有话说：
 
 yii2使用migration备份和还原数据库
 ===========================
@@ -15,13 +17,13 @@ yii2使用migration备份和还原数据库，最初只想做一个在命令行�
 运行
 
 ```
-composer require --prefer-dist chenhakim/migrateBackup "*"
+composer require --prefer-dist chenhakim/chenhakim "*"
 ```
 
 或者添加
 
 ```
-"chenhakim/migrateBackup": "*"
+"chenhakim/chenhakim": "*"
 ```
 
 到 `composer.json` 文件的对应地方.
@@ -79,6 +81,8 @@ $migrate = Yii::createObject([
 ]);
 $migrate->create($table);
 ```
+
+
 -----
 备注：改代码是在e282486518的基础上修改更新的：
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace migrateBackup\migration;
+namespace chenhakim\migration;
 
 use Yii;
 use yii\console\Exception;
 use yii\helpers\Console;
 use yii\helpers\ArrayHelper;
 use yii\console\controllers\MigrateController;
-//use migrateBackup\migration\components\MigrateCreate;
+//use chenhakim\migration\components\MigrateCreate;
 
 /**
  * This is just an example.
@@ -48,7 +48,7 @@ class ConsoleController extends MigrateController
         foreach ($tables as $table) {
             //$migrate = new MigrateCreate();
             $migrate = Yii::createObject([
-                'class' => 'migrateBackup\migration\components\MigrateCreate',
+                'class' => 'chenhakim\migration\components\MigrateCreate',
                 'migrationPath' => '@app/migrations'
             ]);
             $migrate->create($table);

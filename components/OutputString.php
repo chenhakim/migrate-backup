@@ -1,5 +1,5 @@
 <?php
-namespace migrateBackup\migration\components;
+namespace chenhakim\migration\components;
 
 use Yii;
 use yii\base\Object;
