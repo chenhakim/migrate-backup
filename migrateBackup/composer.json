@@ -1,0 +1,19 @@
+{
+    "name": "chenhakim/migrateBackup",
+    "description": "yii2命令行中使用migration备份和还原数据库",
+    "type": "yii2-extension",
+    "keywords": ["yii2","console","migration"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "chenhakim",
+            "email": "1194842583@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "chenhakim\\migration\\": ""
+        }
+    }
+}
